@@ -18,14 +18,18 @@
 	<script src="./script.js"></script>
 </head>
 <body ng-controller="CountdownCtrl">
+
   <div id="countdownWrapper">
-		<div class="pyro" id="pyro">
+    <div id="vacationText">
+    </div>
+		<!-- <div class="pyro" id="pyro">
 		  <div class="before" id="before"></div>
-		  <div class="after" id="after"></div>
+		  <div class="after" id="after"></div> -->
+      <div id="countdown">
+          <countdown autostart="true" time="3" colors="flat-colors-very-wide" callback="finished()"></countdown>
+      </div>
 		</div>
-  	<div id="countdown">
-  			<countdown autostart="true" time="3" colors="flat-colors-very-wide" callback="finished()"></countdown>
-  	</div>
+
 </div>
 </body>
 </html>

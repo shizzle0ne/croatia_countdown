@@ -7,8 +7,33 @@ body {
 
   font-family: 'Roboto', sans-serif;
   background-size: cover;
-  overflow-y: hidden;
+  overflow: hidden;
   margin: 0px;
+}
+
+/** {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}*/
+
+canvas {
+  display: block;
+  cursor: crosshair;
+}
+
+#vacationText {
+  color: #ecf0f1;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.75);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
+  margin: auto;
+  position: absolute;
+  top: 36%;
 }
 
 #countdownWrapper {
@@ -23,6 +48,24 @@ body {
   width: 800px;
   margin: auto;
   margin-top: 200px;
+}
+
+/* Text FadeIn */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
 }
 
 /* darkenBackground */
@@ -47,8 +90,8 @@ body {
 
 /* FadeOut Animation */
 .animated {
-   -webkit-animation-duration: 3s;
-   animation-duration: 3s;
+   -webkit-animation-duration: 2.5s;
+   animation-duration: 2.5s;
    -webkit-animation-fill-mode: both;
    animation-fill-mode: both;
 }
