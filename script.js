@@ -22,10 +22,21 @@ app.controller('CountdownCtrl', ['$scope', function($scope){
 
   // do stuff when finished countdown
   $scope.finished = function() {
+    // fade out the background
+    var countdownWrapper = document.getElementById('countdownWrapper');
+
+    if (countdownWrapper.className != 'animated darkenBackground') {
+      countdownWrapper.className = 'animated darkenBackground';
+    }
+
+    var countdown = document.getElementById('countdown');
+    if (countdown.className != 'animated fadeOut') {
+      countdown.className = 'animated fadeOut';
+    }
+
     // put in awesome animated fireworks!
     pyro.className = 'pyro';
     before.className = 'before';
     after.className = 'after';
-    var fadeOut = document.getElementsByTagName('body').classList.add('animated fadeOut');
   }
 }])
