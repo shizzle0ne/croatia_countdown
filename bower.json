@@ -1,0 +1,22 @@
+{
+  "name": "croatia_countdown",
+  "description": "a simple countdown timer for our vacation",
+  "main": "script.js",
+  "authors": [
+    "kk"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-circle-countdown": "*",
+    "jquery-throttle-debounce": "*"
+  }
+}

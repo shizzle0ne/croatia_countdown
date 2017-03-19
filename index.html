@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="croatiaCountdown">
+<head>
+	<meta charset="UTF-8">
+	<title>Croatia Countdown</title>
+
+  <!-- loading custom fonts, styles & scripts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="./bower_components/angular-circle-countdown/dist/angular_circle_countdown.css">
+  <link rel="stylesheet" href="./style.css">
+
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/jquery/jquery.min.js"></script>
+	<script src="./bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"></script>
+	<script src="./bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+	<script src="./bower_components/angular-circle-countdown/dist/angular_circle_countdown.js"></script>
+
+	<script src="./script.js"></script>
+</head>
+<body ng-controller="CountdownCtrl">
+  <div id="countdownWrapper">
+		<div class="pyro" id="pyro">
+		  <div class="before" id="before"></div>
+		  <div class="after" id="after"></div>
+		</div>
+  	<div id="countdown">
+  			<countdown autostart="true" time="3" colors="flat-colors-very-wide" callback="finished()"></countdown>
+  	</div>
+</div>
+</body>
+</html>
