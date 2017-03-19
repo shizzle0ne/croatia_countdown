@@ -32,18 +32,13 @@ body {
 }
 
 @-webkit-keyframes darkenBackground {
-  0% {
-    opacity: 0;
-  }
   100% {
+    background-color: black;
     opacity: 0.8;
   }
 }
 
 @keyframes darkenBackground {
-  0% {
-    opacity: 0;
-  }
   100% {
     background-color: black;
     opacity: 0.8;
